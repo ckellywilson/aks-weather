@@ -1,0 +1,6 @@
+@aks_weather_HostAddress = http://localhost:5229
+
+GET {{aks_weather_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
