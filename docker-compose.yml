@@ -4,9 +4,12 @@ version: '3.4'
 
 services:
   aksweather:
+    container_name: aksweather
     image: aksweather
     build:
       context: .
       dockerfile: ./Dockerfile
+    environment:
+      - APPLICATIONINSIGHTS_CONNECTION_STRING="InstrumentationKey=0000-000-00000"
     ports:
       - 5229:5229
